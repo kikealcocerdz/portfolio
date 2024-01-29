@@ -1,13 +1,15 @@
 ---
+
 interface Props {
-	logo: string;
-	title: string;
+    logo: string;
+    title: string;
 }
 
 const { logo, title } = Astro.props;
+console.log(title);
 ---
 
-<div class="bg-[#393E46] h-[20svh] w-1/2 m-2 border-2 rounded-lg items-center flex ">
+<a href={`/${title}`} class="bg-[#393E46] h-[20svh] w-1/2 m-2 border-2 rounded-lg items-center flex ">
 	<div class="flex h-[10svh] flex-col justify-evenly items-center">
 		<div class="w-full justify-center flex justify-items-center">
 			<img src={ logo } class="relative top-0 w-[60%] p-4" />
@@ -16,4 +18,4 @@ const { logo, title } = Astro.props;
 			<h2 class="w-full p-2 text-[16px] text-center text-white font-extrabold">{title}</h2>
 		</div>
 	</div>
-</div>
+</a>

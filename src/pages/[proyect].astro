@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from 'astro:transitions';
+
+export async function getStaticPaths() {
+  return [
+    { params: { proyect: 'MyMoonCustoms' } },
+    { params: { proyect: 'Drops Archive' } },
+    { params: { proyect: 'MilfShakes x McDonalds' } },
+
+  ];
+}
+export const prerender = true;
+
+const { proyect } = Astro.params;
+
+console.log(proyect);
+---
+
+<Layout title={`Proyecto ${proyect}`}>
+  <aside transition:name="hero">
+  <main>
+    <article class="mt-4">
+      <h2 class="text-3xl font-bold text-center ">{proyect}</h2>
+      <img src=`/${proyect}.png` alt="proyect" class="w-full" />
+    </article>
+  </main>
+  <Footer />
+</Layout>

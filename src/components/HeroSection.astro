@@ -1,7 +1,7 @@
 <section class="h-screen w-full flex flex-col">
   <div class="flex flex-row justify-between">
     <div class="leading-[0] w-screen text-wrap h-full">
-      <p class="text-[#FFD369] text-center leading-[0] font-extrabold top-24 relative text-4xl">Enrique Alcocer</p>
+      <p id="main-header" class="text-[#FFD369] text-center leading-[0] font-extrabold top-24 relative text-4xl">Enrique Alcocer</p>
       <p class="text-[#FFD369] text-center leading-[0] font-extrabold top-24 relative text-3xl">Desarrollador Web</p>
       <p class="text-[#FFD369] text-center leading-[0] font-extrabold top-24 relative text-[28px]">Ingeniero Informático</p>
     </div>
@@ -29,22 +29,26 @@
 </section>
 
 <script>
-	import { gsap } from "gsap";
-	import SplitTextJS from 'split-text-js';
-		const titles = gsap.utils.toArray('p');
-		const t1 = gsap.timeline({ repeat: -1 })
-    const t2 = gsap.timeline()
+  import { gsap } from "gsap";
+  import SplitTextJS from 'split-text-js';
 
-		titles.forEach(title => {
-			const splitTitle =  new SplitTextJS(title, {type:"chars"})
-			t1.from(splitTitle.chars, {stagger: 0.02, opacity: 0, y: -80, rotateX: -90, delay: 1}, "<")
-			t1.to(splitTitle.chars, {stagger: 0.02, opacity: 0, y: -80, rotateX: 90}, "<+1")
-		})
+  function animateTitles() {
+    const titles = gsap.utils.toArray('p');
+    const t1 = gsap.timeline();
+    const t2 = gsap.timeline();
 
-    t2.to(".animated-text-1", {stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 2}, "<")
-    t2.to(".animated-text-2", {stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 1}, "<")
-    t2.to(".animated-text-3", {stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 1}, "<")
-    t2.to(".animated-text-4", {stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 1}, "<")
+    titles.forEach((title) => {
+      const splitTitle = new SplitTextJS(title, { type: "chars" });
+      t1.from(splitTitle.chars, { stagger: 0.02, opacity: 0, y: -80, rotateX: -90, delay: 1 }, "<");
+      t1.to(splitTitle.chars, { stagger: 0.02, opacity: 0, y: -80, rotateX: 90 }, "<+1");
+    });
+    t2.to(".animated-text-1", { stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 2 }, "<");
+    t2.to(".animated-text-2", { stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 1 }, "<");
+    t2.to(".animated-text-3", { stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 1 }, "<");
+    t2.to(".animated-text-4", { stagger: 0.02, opacity: 1, y: 0, rotateX: 0, delay: 1 }, "<");
+    t2.to("#main-header", { opacity: 1, y: -80, rotateX: 0, delay: 2 }, "<+1")
 
+      }
+    animateTitles();
 
 </script>
