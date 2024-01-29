@@ -10,13 +10,24 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.1.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@fontsource-variable/manrope": "^5.0.18",
     "@fontsource/alata": "^5.0.8",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "astro": "^4.2.6",
     "gsap": "^3.12.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "split-text": "^1.0.0",
     "split-text-js": "^1.0.3",
     "tailwindcss": "^3.4.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   }
 }
