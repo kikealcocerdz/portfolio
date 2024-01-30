@@ -9,22 +9,103 @@ import Footer from '../components/Footer.astro';
 <Layout title="Welcome to Astro.">
 	<main>
 		<aside transition:name="hero">
-		<HeroSection />
+		<HeroSection transition:persist/>
+		<div class="h-[30vh]"></div>
+		
 		<ProyectSection />
 		<ContactSection />
-		<Footer position={"bottom"} />
+		<Footer  client:load position={"bottom"} />
 	</main>
 </Layout>
 
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
 		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+	}
+</style>
+
+<script>
+	import Lenis from '@studio-freight/lenis'
+
+	const lenis = new Lenis()
+
+	function reloadHeroSection() {
+		// Reload logic for HeroSection component
 	}
 
-</style>
+	function raf(time) {
+		lenis.raf(time)
+		requestAnimationFrame(raf)
+	}
+
+	requestAnimationFrame(raf)
+
+  import { gsap } from "gsap";
+  import SplitTextJS from 'split-text-js';
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+  
+  const t1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".animation-text",
+      start: "top 90%",
+      end: "bottom 90%",
+      scrub: 1,
+    },
+  })
+
+  t1.to(".animated-name-2", {     
+    zoom: 1.5, }, "<")
+
+  const t2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".animated-name",
+      start: "top 90%",
+      end: "bottom 90%",
+      scrub: 1,
+    },
+  })
+  
+  t2.to(".animated-name-1", {     
+    
+    delay: 0.5,
+   }, "<");
+
+    
+  t1.to(".animated-text-1", {
+    opacity: 1,
+    duration: 6,
+    delay: 0.5,
+    x: 500,
+  });
+
+  t1.to(".animated-text-2", {
+    opacity: 1,
+    duration: 3,
+    delay: 0.5,
+    x: -510,
+  });
+
+  t1.to(".animated-text-3", {
+    opacity: 1,
+    duration: 3,
+    delay: 0.5,
+    x: 505,
+  });
+
+  t1.to(".animated-text-4", {
+    opacity: 1,
+    duration: 3,
+    delay: 0.5,
+    x: -505,
+  });
+
+  t1.to(".animated-text-5", {
+    opacity: 1,
+    duration: 3,
+    delay: 0.5,
+    x: 500,
+  });
+  
+  </script>
