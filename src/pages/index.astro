@@ -14,7 +14,7 @@ import Footer from '../components/Footer.astro';
 		
 		<ProyectSection />
 		<ContactSection />
-		<Footer  client:load position={"bottom"} />
+		<Footer position={"bottom"} />
 	</main>
 </Layout>
 
@@ -29,10 +29,6 @@ import Footer from '../components/Footer.astro';
 	import Lenis from '@studio-freight/lenis'
 
 	const lenis = new Lenis()
-
-	function reloadHeroSection() {
-		// Reload logic for HeroSection component
-	}
 
 	function raf(time) {
 		lenis.raf(time)
