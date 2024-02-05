@@ -21,10 +21,30 @@ console.log(proyect);
 <Layout title={`Proyecto ${proyect}`}>
   <aside transition:name="hero">
   <main>
-    <article class="mt-4">
-      <h2 class="text-3xl font-bold text-center ">{proyect}</h2>
-      <img src=`/${proyect}.png` alt="proyect" class="w-full" />
+    <article class="mt-28 flex-col flex items-center justify-center">
+      <h2 class="text-3xl m-12 font-bold text-center ">{proyect}</h2>
+      <img src=`/${proyect}.png` alt="proyect" class="w-4/5 rounded-lg border-[#EEEEEE] border-2 " />
+      <ul>
+        <li class="text-2xl text-[#ffc232] m-4 font-extrabold text-center p-4">Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.</li>
+        <li class="text-xl m-4 font-bold text-left p-2">Inspirado en una selección de menú de McDonald's para la temática.</li>
+        <li class="text-xl m-4 font-bold text-left p-2">Modificaciones en el diseño de las páginas de productos.</li>
+        <li class="text-xl m-4 font-bold text-left p-2">Implementación de un modelo 3D para una experiencia renovada.</li>
+        <li class="text-xl m-4 font-bold text-left p-2">Habilidad destacada para fusionar marcas y mejorar la experiencia de compra.</li>
+      </ul>
     </article>
   </main>
   <Footer />
 </Layout>
+
+<script>
+  import Lenis from '@studio-freight/lenis'
+
+  const lenis = new Lenis()
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+</script>
