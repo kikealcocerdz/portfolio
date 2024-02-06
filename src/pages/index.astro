@@ -1,107 +1,120 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import HeroSection from '../components/HeroSection.astro';
-import ProyectSection from '../components/ProyectSection.astro';
-import ContactSection from '../components/ContactSection.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ProyectSection from "../components/ProyectSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<aside transition:name="hero">
-		<HeroSection transition:persist/>
-		<div class="h-[30vh]"></div>
-		
-		<ProyectSection />
-		<ContactSection />
-		<Footer position={"bottom"} />
-	</main>
-</Layout>
+  <main>
+    <aside>
+      <Header />
+      <HeroSection />
+      <div class="h-[30vh]"></div>
 
-<style>
-	main {
-		margin: auto;
-		color: white;
-	}
-</style>
+      <ProyectSection />
+      <ContactSection />
+      <Footer position={"bottom"} />
+    </aside>
+  </main>
 
-<script>
-	import Lenis from '@studio-freight/lenis'
+  <style>
+    main {
+      scroll-behavior: smooth;
+      margin: auto;
+      color: white;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 
-	const lenis = new Lenis()
+  <script>
+    import Lenis from "@studio-freight/lenis";
 
-	function raf(time) {
-		lenis.raf(time)
-		requestAnimationFrame(raf)
-	}
+    const lenis = new Lenis();
 
-	requestAnimationFrame(raf)
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-  import { gsap } from "gsap";
-  import SplitTextJS from 'split-text-js';
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-  gsap.registerPlugin(ScrollTrigger);
-  
-  const t1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".animation-text",
-      start: "top 90%",
-      end: "bottom 90%",
-      scrub: 1,
-    },
-  })
+    requestAnimationFrame(raf);
 
-  t1.to(".animated-name-2", {     
-    zoom: 1.5, }, "<")
+    import { gsap } from "gsap";
+    import SplitTextJS from "split-text-js";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    gsap.registerPlugin(ScrollTrigger);
 
-  const t2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".animated-name",
-      start: "top 90%",
-      end: "bottom 90%",
-      scrub: 1,
-    },
-  })
-  
-  t2.to(".animated-name-1", {     
-    
-    delay: 0.5,
-   }, "<");
+    const t1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".animation-text",
+        start: "top 90%",
+        end: "bottom 90%",
+        scrub: true,
+      },
+    });
 
-    
-  t1.to(".animated-text-1", {
-    opacity: 1,
-    duration: 6,
-    delay: 0.5,
-    x: 500,
-  });
+    t1.to(
+      ".animated-name-2",
+      {
+        zoom: 1.5,
+      },
+      "<"
+    );
 
-  t1.to(".animated-text-2", {
-    opacity: 1,
-    duration: 3,
-    delay: 0.5,
-    x: -510,
-  });
+    const t2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".animated-name",
+        start: "top 90%",
+        end: "bottom 90%",
+        scrub: true,
+      },
+    });
 
-  t1.to(".animated-text-3", {
-    opacity: 1,
-    duration: 3,
-    delay: 0.5,
-    x: 505,
-  });
+    t2.to(
+      ".animated-name-1",
+      {
+        delay: 0.5,
+      },
+      "<"
+    );
 
-  t1.to(".animated-text-4", {
-    opacity: 1,
-    duration: 3,
-    delay: 0.5,
-    x: -505,
-  });
+    t1.to(".animated-text-1", {
+      opacity: 1,
+      duration: 6,
+      delay: 0.5,
+      x: 500,
+    });
 
-  t1.to(".animated-text-5", {
-    opacity: 1,
-    duration: 3,
-    delay: 0.5,
-    x: 500,
-  });
-  
+    t1.to(".animated-text-2", {
+      opacity: 1,
+      duration: 3,
+      delay: 0.5,
+      x: -510,
+    });
+
+    t1.to(".animated-text-3", {
+      opacity: 1,
+      duration: 3,
+      delay: 0.5,
+      x: 505,
+    });
+
+    t1.to(".animated-text-4", {
+      opacity: 1,
+      duration: 3,
+      delay: 0.5,
+      x: -505,
+    });
+
+    t1.to(".animated-text-5", {
+      opacity: 1,
+      duration: 3,
+      delay: 0.5,
+      x: 500,
+    });
   </script>
+</Layout>
