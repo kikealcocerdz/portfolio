@@ -5,9 +5,14 @@ import content from "../data/content.json";
 
 export async function getStaticPaths() {
   return [
+    { params: { proyect: "McDonald's" } },
+    { params: { proyect: "007" } },
+    { params: { proyect: "012" } },
+    { params: { proyect: "015" } },
+    { params: { proyect: "ESSNTLS 3" } },
+    { params: { proyect: "REBRANDING" } },
+    { params: { proyect: "CannaBubu" } },
     { params: { proyect: "MyMoonCustoms" } },
-    { params: { proyect: "Drops Archive" } },
-    { params: { proyect: "MilfShakes x McDonalds" } },
   ];
 }
 export const prerender = true;
@@ -20,19 +25,16 @@ const projectContent = content[0];
 const title = projectContent[proyect].title;
 const description = projectContent[proyect].description;
 const features = projectContent[proyect].features;
+const featuredImage = projectContent[proyect].featuredImage;
 let key = 0;
 ---
 
 <Layout title={`Proyecto ${proyect}`}>
   <aside transition:name="hero">
-    <main>
+    <main class="bg-gray-950">
       <article class="mt-28 flex-col flex items-center justify-center">
-        <h2 class="text-3xl m-12 font-bold text-center">{proyect}</h2>
-        <img
-          src=`/${proyect}.png`
-          alt="proyect"
-          class="w-4/5 rounded-lg border-[#EEEEEE] border-2"
-        />
+        <h2 class="text-3xl m-12 font-bold text-center">{title}</h2>
+        <img src=`/${featuredImage}` alt=`${featuredImage}` class="w-2/4" />
         <ul>
           <li
             class="text-2xl text-[#ffc232] m-4 font-extrabold text-center p-4"
@@ -52,17 +54,10 @@ let key = 0;
     </main>
     <Footer />
   </aside>
-
-  <script>
-    import Lenis from "@studio-freight/lenis";
-
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  </script>
 </Layout>
+<style>
+  html {
+    scroll-behavior: smooth;
+    background-color: #030712;
+  }
+</style>

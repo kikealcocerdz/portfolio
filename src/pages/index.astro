@@ -8,18 +8,15 @@ import Header from "../components/Header.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
+  <main class="bg-gray-950">
     <aside>
       <Header />
       <HeroSection />
-      <div class="h-[30vh]"></div>
-
       <ProyectSection />
       <ContactSection />
-      <Footer position={"bottom"} />
+      <!-- <Footer position={"bottom"} /> -->
     </aside>
   </main>
-
   <style>
     main {
       scroll-behavior: smooth;
@@ -28,92 +25,7 @@ import Header from "../components/Header.astro";
     }
     html {
       scroll-behavior: smooth;
+      background-color: #030712;
     }
   </style>
-
-  <script>
-    import Lenis from "@studio-freight/lenis";
-
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
-    gsap.registerPlugin(ScrollTrigger);
-
-    const t1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".animation-text",
-        start: "top 90%",
-        end: "bottom 90%",
-        scrub: true,
-      },
-    });
-
-    t1.to(
-      ".animated-name-2",
-      {
-        zoom: 1.5,
-      },
-      "<"
-    );
-
-    const t2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".animated-name",
-        start: "top 90%",
-        end: "bottom 90%",
-        scrub: true,
-      },
-    });
-
-    t2.to(
-      ".animated-name-1",
-      {
-        delay: 0.5,
-      },
-      "<"
-    );
-
-    t1.to(".animated-text-1", {
-      opacity: 1,
-      duration: 6,
-      delay: 0.5,
-      x: 500,
-    });
-
-    t1.to(".animated-text-2", {
-      opacity: 1,
-      duration: 3,
-      delay: 0.5,
-      x: -510,
-    });
-
-    t1.to(".animated-text-3", {
-      opacity: 1,
-      duration: 3,
-      delay: 0.5,
-      x: 505,
-    });
-
-    t1.to(".animated-text-4", {
-      opacity: 1,
-      duration: 3,
-      delay: 0.5,
-      x: -505,
-    });
-
-    t1.to(".animated-text-5", {
-      opacity: 1,
-      duration: 3,
-      delay: 0.5,
-      x: 500,
-    });
-  </script>
 </Layout>

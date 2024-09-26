@@ -30,9 +30,17 @@ import "@fontsource-variable/manrope";
   }
 
   html {
-    font-family: "Manrope Variable", sans-serif;
-    background: #222831;
+    font-family: "Lalezar";
+    letter-spacing: 0em;
+    line-height: 1;
   }
+
+  @media screen and max-width(768px) {
+    html {
+      letter-spacing: 0 !important;
+    }
+  }
+
   code {
     font-family:
       Menlo,
@@ -43,5 +51,10 @@ import "@fontsource-variable/manrope";
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
+  }
+
+  @font-face {
+    font-family: "Lalezar";
+    src: url("./Lalezar-Regular.ttf") format("truetype");
   }
 </style>

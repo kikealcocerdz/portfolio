@@ -7,17 +7,9 @@ import SocialMedia from "./SocialMedia.astro";
   id="heroSection"
   class="flex flex-col h-full w-screen herosection overflow-x-hidden"
 >
-  <div class="flex flex-col bg-[#222831]">
-    <!--
-
-    <div id="loader" class="w-full h-screen flex flex-col mb-36 items-center justify-center">
-      <p class="text-[#FFD369] leading-[0] font-extrabold text-4xl">Desarrollador<br>Web</p>
-      <p class="text-[#FFD369] leading-[0] font-extrabold text-[30px]">Ingeniero Informático</p>
-      <p class="text-[#FFD369] leading-[0] font-extrabold text-4xl">Digitalizate</p>
-    </div>
-     -->
+  <div class="flex flex-col">
     <div
-      class="h-[90svh] w-full items-center justify-center flex flex-col animate-name"
+      class="h-[90vh] w-full items-center justify-center flex flex-col animate-name"
     >
       <img
         class="opacity-1 w-[200px] h-[200px] rounded-full relative heroImage"
@@ -25,7 +17,7 @@ import SocialMedia from "./SocialMedia.astro";
         alt="Enrique Alcocer"
       />
       <h1
-        class="animated-name-1 text-[#FFD369] text-center opacity-1 font-extrabold z-50 relative text-6xl"
+        class="animated-name-1 text-[#ececec] text-center opacity-1 font-normal z-50 relative text-4xl"
       >
         Enrique Alcocer
       </h1>
@@ -33,36 +25,6 @@ import SocialMedia from "./SocialMedia.astro";
     </div>
   </div>
 </section>
-<div class="h-[20vh]"></div>
-<article class="flex flex-col justify-center items-center animation-text">
-  <h2
-    class="animated-text-1 text-left relative my-2 left-[-500px] font-extrabold text-4xl py-4"
-  >
-    Digitaliza tu negocio
-  </h2>
-  <h2
-    class="animated-text-2 text-right relative my-2 right-[-500px] font-extrabold text-4xl py-4"
-  >
-    Date a conocer con un portfolio sorprendente
-  </h2>
-  <h2
-    class="animated-text-3 text-left relative my-2 left-[-500px] font-extrabold text-4xl py-4"
-  >
-    Potencia tu presencia online
-  </h2>
-  <h2
-    class="animated-text-4 text-right relative my-2 right-[-500px] font-extrabold text-4xl py-4"
-  >
-    Desarrollo web a medida
-  </h2>
-  <h2
-    class="animated-text-5 text-center relative my-2 left-[-500px] font-extrabold text-6xl py-4"
-  >
-    Contacta y empecemos
-  </h2>
-</article>
-<SocialMedia />
-
 <script>
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -80,6 +42,7 @@ import SocialMedia from "./SocialMedia.astro";
     scale: 0.3,
     x: 140,
     y: -55,
+    margin: 0,
   });
   t1.to(
     ".animated-name-1",

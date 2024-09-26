@@ -2,28 +2,81 @@
   {
     "MyMoonCustoms": {
       "title": "MyMoonCustoms",
-      "description": "Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.",
+      "description": "Web con experiencia para presentar el último drop de M***SHAKES.",
+      "featuredImage": "./mooncustoms.jpg",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
       ]
     },
-    "Drops Archive": {
-      "title": "Drops Archive",
-      "description": "Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.",
+    "007": {
+      "title": "007. CASCO MALAMANERA",
+      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "featuredImage": "./007.png",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
       ]
     },
-    "MilfShakes x McDonalds": {
+    "012": {
+      "title": "012. GOLD INGOT",
+      "description": "Experiencia para el drop 012, M***SHAKES x Fernando Costa",
+      "featuredImage": "./012.webp",
+      "features": [
+        "Modificaciones en el diseño de las páginas de productos.",
+        "Implementación de un modelo 3D para una experiencia renovada.",
+        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ]
+    },
+    "015": {
+      "title": "015. CUADRO 1/1",
+      "featuredImage": "./015.png",
+      "description": "Experiencia para el drop 015, M***SHAKES x Fernando Costa",
+      "features": [
+        "Modificaciones en el diseño de las páginas de productos.",
+        "Implementación de un modelo 3D para una experiencia renovada.",
+        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ]
+    },
+    "McDonald's": {
       "title": "MilfShakes x McDonalds",
+      "featuredImage": "./McDonalds.png",
       "description": "Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Wuablabadasd.",
+        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ]
+    },
+    "ESSNTLS 3": {
+      "title": "ESSNTLS 3",
+      "featuredImage": "essentials3.png",
+      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "features": [
+        "Modificaciones en el diseño de las páginas de productos.",
+        "Implementación de un modelo 3D para una experiencia renovada.",
+        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ]
+    },
+    "CannaBubu": {
+      "title": "CannaBubu",
+      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "featuredImage": "logo-cannabubu.png",
+      "features": [
+        "Modificaciones en el diseño de las páginas de productos.",
+        "Implementación de un modelo 3D para una experiencia renovada.",
+        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ]
+    },
+    "REBRANDING": {
+      "title": "REBRANDING",
+      "featuredImage": "LOGOASTERISCOS.png",
+      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "features": [
+        "Modificaciones en el diseño de las páginas de productos.",
+        "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
       ]
     }

@@ -10,14 +10,14 @@ console.log(title);
 
 <a
   href={`/${title}`}
-  class="bg-[#393E46] h-[20svh] w-1/2 m-2 border-[5px] border-[#FFD369] rounded-lg items-center flex"
+  class="w-full m-2 rounded-md items-center justify-between flex max-w-24 h-36"
 >
-  <div class="p-4 flex h-[10svh] flex-col justify-evenly items-center">
-    <div class="w-full justify-center flex justify-items-center">
-      <img src={logo} class="relative top-0 w-[60%] p-4" />
+  <div class="flex flex-col items-center">
+    <div class="justify-center flex justify-items-center aspect-square w-24">
+      <img src={logo} />
     </div>
-    <div class="w-full h-[10svh] flex items-center justify-center">
-      <h2 class="w-full p-2 text-[16px] text-center text-white font-extrabold">
+    <div class="w-full flex items-center justify-center">
+      <h2 class="text-sm text-center">
         {title}
       </h2>
     </div>
