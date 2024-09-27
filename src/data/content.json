@@ -14,10 +14,17 @@
       "title": "007. CASCO MALAMANERA",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
       "featuredImage": "./007.png",
+      "featuredVideo": "videos/",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     },
     "012": {
@@ -28,36 +35,66 @@
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp",
+        "python-logo.webp",
+        "pythonanywhere-logo.webp"
       ]
     },
     "015": {
       "title": "015. CUADRO 1/1",
       "featuredImage": "./015.png",
+      "featuredVideo": "cuadro.gif",
       "description": "Experiencia para el drop 015, M***SHAKES x Fernando Costa",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     },
     "McDonald's": {
       "title": "MilfShakes x McDonalds",
       "featuredImage": "./McDonalds.png",
+      "featuredVideo": "mcdonalds.gif",
+      "extraVideo": "mcdonalds-productpage.gif",
       "description": "Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Wuablabadasd.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     },
     "ESSNTLS 3": {
       "title": "ESSNTLS 3",
       "featuredImage": "essentials3.png",
+      "featuredVideo": "ess3.gif",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     },
     "CannaBubu": {
@@ -68,6 +105,12 @@
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     },
     "REBRANDING": {
@@ -78,6 +121,12 @@
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     }
   }

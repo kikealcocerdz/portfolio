@@ -1,0 +1,17 @@
+---
+const { position } = Astro.props;
+---
+
+<footer
+  class={position === "bottom"
+    ? "w-full fixed bottom-0 mb-5 flex justify-center z-0 left-0"
+    : "w-full fixed top-0 mt-5 flex justify-center z-0"}
+>
+  <nav
+    class="flex py-3 mx-auto text-center justify-between items-center p-1 w-5/6 rounded-full bg-[#ffd269] mt-2"
+  >
+    <a class="text-md w-full text-[#222831]" href="/">PROYECTOS</a>
+    <a class="text-md w-full text-[#222831]" href="/">EMAIL</a>
+    <a class="text-md w-full text-[#222831]" href="#contacto">CONTACTA</a>
+  </nav>
+</footer>
