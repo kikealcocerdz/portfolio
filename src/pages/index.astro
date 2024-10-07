@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Enrique Alcocer">
   <main class="bg-gray-950">
     <aside>
       <Header />
@@ -19,13 +19,22 @@ import Header from "../components/Header.astro";
   </main>
   <style>
     main {
-      scroll-behavior: smooth;
       margin: auto;
       color: white;
     }
     html {
-      scroll-behavior: smooth;
       background-color: #030712;
     }
   </style>
+  <script>
+    import Lenis from "lenis";
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
 </Layout>

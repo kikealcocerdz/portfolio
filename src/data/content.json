@@ -14,7 +14,7 @@
       "title": "007. CASCO MALAMANERA",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
       "featuredImage": "./007.png",
-      "featuredVideo": "videos/",
+      "featuredVideo": "./video-007.gif",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
@@ -31,6 +31,7 @@
       "title": "012. GOLD INGOT",
       "description": "Experiencia para el drop 012, M***SHAKES x Fernando Costa",
       "featuredImage": "./012.webp",
+      "featuredVideo": "./video-012.gif",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
@@ -116,6 +117,8 @@
     "REBRANDING": {
       "title": "REBRANDING",
       "featuredImage": "LOGOASTERISCOS.png",
+      "featuredVideo": "./rebranding.gif",
+      "extraVideo": "./product-page-rebranding.gif",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",

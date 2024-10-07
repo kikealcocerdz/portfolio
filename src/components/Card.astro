@@ -10,11 +10,11 @@ console.log(title);
 
 <a
   href={`/${title}`}
-  class="w-full m-2 rounded-md items-center justify-between flex max-w-24 h-36"
+  class="w-48 m-2 rounded-md flex flex-col items-center justify-evenly bg-white shadow-md h-48 sm:h-60 sm:w-48 hover:shadow-2xl transition-shadow duration-300 ease-in-out"
 >
   <div class="flex flex-col items-center">
-    <div class="justify-center flex justify-items-center aspect-square w-24">
-      <img src={logo} />
+    <div class="flex justify-center items-center w-24 h-24 sm:w-28 sm:h-28">
+      <img src={logo} class="object-contain w-full h-full" />
     </div>
     <div class="w-full flex items-center justify-center">
       <h2 class="text-sm text-center">

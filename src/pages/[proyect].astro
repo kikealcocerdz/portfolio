@@ -33,7 +33,7 @@ const stackUsed = projectContent[proyect].stackUsed;
 let key = 0;
 ---
 
-<Layout title={`Proyecto ${proyect}`}>
+<Layout title={`Enrique Alcocer - ${proyect}`}>
   <aside transition:name="hero">
     <main class="bg-gray-950">
       <nav class="flex justify-between items-center p-4">
@@ -41,31 +41,48 @@ let key = 0;
       </nav>
       <article class="flex-col flex items-center justify-center">
         <h2 class="text-3xl mt-4 font-bold text-center">{title}</h2>
-        <img src=`/${featuredImage}` alt=`${featuredImage}` class="w-2/4" />
+        <img
+          src=`/${featuredImage}`
+          alt=`${featuredImage}`
+          class="w-2/4 sm:w-1/6"
+        />
         <ul class="flex flex-col items-center justify-center">
           <li
-            class="text-2xl text-[#ffc232] m-4 font-extrabold text-center p-4"
+            class="text-2xl sm:text-4xl text-[#ffc232] m-4 font-extrabold text-center p-4 flex flex-col"
           >
             {description}
           </li>
-          <img
-            src=`videos/${featuredVideo}`
-            alt=`${featuredVideo}`
-            class="w-[95%] rounded-md m-2"
-          />
+          { !extraVideo && (
+            <img
+              src=`videos/${featuredVideo}`
+              alt=`${featuredVideo}`
+              class="w-[95%] sm:w-3/4 rounded-md m-2"
+            />
+          )}
           {
             extraVideo && (
-              <img
-                src={"videos/" + extraVideo}
-                alt={extraVideo}
-                class="w-[95%] rounded-md m-2"
-              />
-            )
-          }
+          <div class="flex flex-col sm:flex-row items-center justify-center">
+            <img
+              src=`videos/${featuredVideo}`
+              alt=`${featuredVideo}`
+              class="w-[95%] rounded-md m-2 sm:w-1/3"
+            />
+ 
+                <img
+                  src={"videos/" + extraVideo}
+                  alt={extraVideo}
+                  class="w-[95%] rounded-md m-2 sm:w-1/3"
+                />
+          </div>
+              )
+            }
           {
             features &&
               features.map((feature, index) => (
-                <li key={index} class="text-xl m-4 font-bold text-left p-2">
+                <li
+                  key={index}
+                  class="text-xl sm:text-2xl m-4 font-bold text-left p-2"
+                >
                   {feature}
                 </li>
               ))
@@ -89,7 +106,17 @@ let key = 0;
 </Layout>
 <style>
   html {
-    scroll-behavior: smooth;
     background-color: #030712;
   }
 </style>
+<script>
+  import Lenis from "lenis";
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>

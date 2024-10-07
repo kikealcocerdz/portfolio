@@ -23,38 +23,38 @@ import "@fontsource-variable/manrope";
   <body>
     <slot />
   </body>
-</html>
-<style is:global>
-  :root {
-    color-scheme: light dark;
-  }
-
-  html {
-    font-family: "Lalezar";
-    letter-spacing: 0em;
-    line-height: 1;
-  }
-
-  @media screen and max-width(768px) {
-    html {
-      letter-spacing: 0 !important;
+  <style is:global>
+    :root {
+      color-scheme: light dark;
     }
-  }
 
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
+    html {
+      font-family: "Lalezar";
+      letter-spacing: 0em;
+      line-height: 1;
+    }
 
-  @font-face {
-    font-family: "Lalezar";
-    src: url("./Lalezar-Regular.ttf") format("truetype");
-  }
-</style>
+    @media screen and max-width(768px) {
+      html {
+        letter-spacing: 0 !important;
+      }
+    }
+
+    code {
+      font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+    }
+
+    @font-face {
+      font-family: "Lalezar";
+      src: url("./Lalezar-Regular.ttf") format("truetype");
+    }
+  </style>
+</html>
