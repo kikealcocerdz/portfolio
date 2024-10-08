@@ -30,14 +30,9 @@ const featuredImage = projectContent[proyect].featuredImage;
 const featuredVideo = projectContent[proyect].featuredVideo;
 const extraVideo = projectContent[proyect].extraVideo;
 const stackUsed = projectContent[proyect].stackUsed;
-
-console.log(proyect)
-let proyectString = proyect.toString().toLowerCase().replace(/ /g, "-");
-console.log(`proyect-${proyectString}`);
-
 ---
 
-<Layout title={`Enrique Alcocer - ${proyect}`}>
+<Layout title={`Enrique Alcocer - ${proyect}`} >
     <main class="bg-gray-950" >
       <nav class="flex justify-between items-center p-4 fixed bg-gray-950 w-full z-50">
         <a href="javascript:void(0);" onclick="window.history.go(-1);" class="text-2xl font-bold text-[#ffc232]">BACK</a>

@@ -9,20 +9,22 @@ import { ViewTransitions } from "astro:transitions";
 import "@fontsource-variable/manrope";
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.svg" sizes="48x48" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="generator" content="{Astro.generator}" />
     <meta name="view-transition" content="same-origin" />
     <title>{title}</title>
     <ViewTransitions />
-  </head><body>
+  </head>
+  <body>
     <slot />
-  </body><style is:global>
+  </body>
+  <style is:global>
     @keyframes slideUp {
       from {
         transform: translateY(20%);
@@ -61,12 +63,6 @@ import "@fontsource-variable/manrope";
       color-scheme: light dark;
     }
 
-    html {
-      font-family: "Lalezar";
-      letter-spacing: 0em;
-      line-height: 1;
-    }
-
     @media screen and max-width(768px) {
       html {
         letter-spacing: 0 !important;
@@ -74,20 +70,19 @@ import "@fontsource-variable/manrope";
     }
 
     code {
-      font-family:
-        Menlo,
-        Monaco,
-        Lucida Console,
-        Liberation Mono,
-        DejaVu Sans Mono,
-        Bitstream Vera Sans Mono,
-        Courier New,
-        monospace;
+      font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     }
 
     @font-face {
       font-family: "Lalezar";
-      src: url("./Lalezar-Regular.ttf") format("truetype");
+      src: url("/fonts/Lalezar-Regular.ttf") format("truetype");
+    }
+
+    html {
+      font-family: "Lalezar";
+      letter-spacing: 0em;
+      line-height: 1;
     }
   </style>
 </html>
