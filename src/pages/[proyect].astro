@@ -6,11 +6,11 @@ import ContactSection from "../components/ContactSection.astro";
 
 export async function getStaticPaths() {
   return [
-    { params: { proyect: "McDonald's" } },
+    { params: { proyect: "McDonalds" } },
     { params: { proyect: "007" } },
     { params: { proyect: "012" } },
     { params: { proyect: "015" } },
-    { params: { proyect: "ESSNTLS 3" } },
+    { params: { proyect: "ESSNTLS3" } },
     { params: { proyect: "REBRANDING" } },
     { params: { proyect: "CannaBubu" } },
     { params: { proyect: "MyMoonCustoms" } },
@@ -30,14 +30,17 @@ const featuredImage = projectContent[proyect].featuredImage;
 const featuredVideo = projectContent[proyect].featuredVideo;
 const extraVideo = projectContent[proyect].extraVideo;
 const stackUsed = projectContent[proyect].stackUsed;
-let key = 0;
+
+console.log(proyect)
+let proyectString = proyect.toString().toLowerCase().replace(/ /g, "-");
+console.log(`proyect-${proyectString}`);
+
 ---
 
 <Layout title={`Enrique Alcocer - ${proyect}`}>
-  <aside transition:name="hero">
-    <main class="bg-gray-950">
+    <main class="bg-gray-950" >
       <nav class="flex justify-between items-center p-4">
-        <a href="/" class="text-2xl font-bold text-[#ffc232]">BACK</a>
+        <a href="javascript:void(0);" onclick="window.history.go(-1);" class="text-2xl font-bold text-[#ffc232]">BACK</a>
       </nav>
       <article class="flex-col flex items-center justify-center">
         <h2 class="text-3xl mt-4 font-bold text-center">{title}</h2>
@@ -45,6 +48,7 @@ let key = 0;
           src=`/${featuredImage}`
           alt=`${featuredImage}`
           class="w-2/4 sm:w-1/6"
+          transition:name=`proyect-${proyect}`
         />
         <ul class="flex flex-col items-center justify-center">
           <li
@@ -100,23 +104,12 @@ let key = 0;
             ))
         }
       </article>
-    </main>
+
     <ContactSection />
-  </aside>
+    </main>
 </Layout>
 <style>
   html {
     background-color: #030712;
   }
 </style>
-<script>
-  import Lenis from "lenis";
-  const lenis = new Lenis();
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-</script>

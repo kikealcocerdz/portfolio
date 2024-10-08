@@ -3,7 +3,7 @@
     "MyMoonCustoms": {
       "title": "MyMoonCustoms",
       "description": "Web con experiencia para presentar el último drop de M***SHAKES.",
-      "featuredImage": "./mooncustoms.jpg",
+      "featuredImage": "mooncustoms.jpg",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
         "Implementación de un modelo 3D para una experiencia renovada.",
@@ -11,9 +11,9 @@
       ]
     },
     "007": {
-      "title": "007. CASCO MALAMANERA",
+      "title": "DROP 007",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
-      "featuredImage": "./007.png",
+      "featuredImage": "007.png",
       "featuredVideo": "./video-007.gif",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
@@ -28,9 +28,9 @@
       ]
     },
     "012": {
-      "title": "012. GOLD INGOT",
+      "title": "DROP 012",
       "description": "Experiencia para el drop 012, M***SHAKES x Fernando Costa",
-      "featuredImage": "./012.webp",
+      "featuredImage": "012.webp",
       "featuredVideo": "./video-012.gif",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
@@ -47,8 +47,8 @@
       ]
     },
     "015": {
-      "title": "015. CUADRO 1/1",
-      "featuredImage": "./015.png",
+      "title": "DROP 015",
+      "featuredImage": "015.png",
       "featuredVideo": "cuadro.gif",
       "description": "Experiencia para el drop 015, M***SHAKES x Fernando Costa",
       "features": [
@@ -63,9 +63,9 @@
         "CSS-logo.webp"
       ]
     },
-    "McDonald's": {
+    "McDonalds": {
       "title": "MilfShakes x McDonalds",
-      "featuredImage": "./McDonalds.png",
+      "featuredImage": "McDonalds.png",
       "featuredVideo": "mcdonalds.gif",
       "extraVideo": "mcdonalds-productpage.gif",
       "description": "Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.",
@@ -81,8 +81,8 @@
         "CSS-logo.webp"
       ]
     },
-    "ESSNTLS 3": {
-      "title": "ESSNTLS 3",
+    "ESSNTLS3": {
+      "title": "ESSNTLS3",
       "featuredImage": "essentials3.png",
       "featuredVideo": "ess3.gif",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",

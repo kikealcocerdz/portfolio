@@ -14,7 +14,11 @@ console.log(title);
 >
   <div class="flex flex-col items-center">
     <div class="flex justify-center items-center w-24 h-24 sm:w-28 sm:h-28">
-      <img src={logo} class="object-contain w-full h-full" />
+      <img
+        src={logo}
+        class="object-contain w-full h-full"
+        transition:name=`proyect-${title}`
+      />
     </div>
     <div class="w-full flex items-center justify-center">
       <h2 class="text-sm text-center">
