@@ -5,6 +5,7 @@ import ProyectSection from "../components/ProyectSection.astro";
 import ContactSection from "../components/ContactSection.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import PresentationSection from "../components/PresentationSection.astro";
 ---
 
 <Layout title="Enrique Alcocer" transition:persist>
@@ -12,6 +13,7 @@ import Header from "../components/Header.astro";
     <aside>
       <Header />
       <HeroSection />
+      <PresentationSection />
       <ProyectSection />
       <ContactSection />
       <!-- <Footer position={"bottom"} /> -->
@@ -21,6 +23,7 @@ import Header from "../components/Header.astro";
     main {
       margin: auto;
       color: white;
+      overflow-x: hidden;
     }
     html {
       background-color: #030712;
