@@ -80,7 +80,7 @@ const stackUsed = projectContent[proyect].stackUsed;
               features.map((feature, index) => (
                 <li
                   key={index}
-                  class="text-xl sm:text-2xl m-4 font-bold text-left p-2"
+                  class="text-xl sm:text-2xl sm:w-2/3 w-5/6 font-bold text-left p-4"
                 >
                   {feature}
                 </li>
@@ -88,9 +88,9 @@ const stackUsed = projectContent[proyect].stackUsed;
           }
         </ul>
       </article>
-      <h3 class="text-center text-3xl">Stack utilizado</h3>
+      <h3 class="text-center text-3xl mt-4">Stack utilizado</h3>
       <article
-        class="flex flex-row flex-auto flex-wrap items-center justify-center"
+        class="flex flex-row flex-auto flex-wrap items-center justify-center "
       >
         {
           stackUsed &&

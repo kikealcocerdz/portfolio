@@ -2,23 +2,21 @@
   {
     "MyMoonCustoms": {
       "title": "MyMoonCustoms",
-      "description": "Web con experiencia para presentar el último drop de M***SHAKES.",
+      "description": "Portfolio para una tienda de personalización de prendas",
       "featuredImage": "mooncustoms.jpg",
       "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+        "Creación de una única página para presentar los productos",
+        "Animaciones con GSAP para una experiencia más atractiva"
       ]
     },
     "007": {
       "title": "DROP 007",
-      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "description": "Experiencia M***SHAKES x Fernando Costa",
       "featuredImage": "007.png",
       "featuredVideo": "./video-007.gif",
       "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+        "Web experiencia para revelar el drop 007",
+        "Minijuego con pistas utilizando JavaScript y CSS"
       ],
       "stackUsed": [
         "shopify-logo.webp",
@@ -29,13 +27,30 @@
     },
     "012": {
       "title": "DROP 012",
-      "description": "Experiencia para el drop 012, M***SHAKES x Fernando Costa",
+      "description": "Venta de tickets para sorteo para ganar un lingote de oro de 1kg",
       "featuredImage": "012.webp",
       "featuredVideo": "./video-012.gif",
       "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+        "Implementación de tickets en un e-commerce",
+        "Realización en la extracción de los datos para el respectivo sorteo",
+        "Creación de una landing atractiva e intuitiva"
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
+      ]
+    },
+    "015": {
+      "title": "DROP 015",
+      "featuredImage": "015.png",
+      "featuredVideo": "cuadro.gif",
+      "description": "Venta de una obra de arte, con una disminución de precio automática",
+      "features": [
+        "Replicación en web de un escaparate real en Gran Vía, Madrid.",
+        "Animaciones con GSAP para dar una sensación similar a visitar el escaparate",
+        "Automatización de la bajada de precio cada minuto utilizando Python"
       ],
       "stackUsed": [
         "shopify-logo.webp",
@@ -46,23 +61,6 @@
         "pythonanywhere-logo.webp"
       ]
     },
-    "015": {
-      "title": "DROP 015",
-      "featuredImage": "015.png",
-      "featuredVideo": "cuadro.gif",
-      "description": "Experiencia para el drop 015, M***SHAKES x Fernando Costa",
-      "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
-      ],
-      "stackUsed": [
-        "shopify-logo.webp",
-        "JS-logo.webp",
-        "html-logo.webp",
-        "CSS-logo.webp"
-      ]
-    },
     "McDonalds": {
       "title": "MilfShakes x McDonalds",
       "featuredImage": "McDonalds.png",
@@ -71,7 +69,7 @@
       "description": "Adaptación E-Commerce para la colaboración entre MilfShakes y McDonald's.",
       "features": [
         "Modificaciones en el diseño de las páginas de productos.",
-        "Wuablabadasd.",
+        "Reestructura de la página de inicio para simular una pantalla de pedidos",
         "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
       ],
       "stackUsed": [
@@ -85,11 +83,11 @@
       "title": "ESSNTLS3",
       "featuredImage": "essentials3.png",
       "featuredVideo": "ess3.gif",
-      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "description": "Rediseño de la página de inicio de M***SHAKES",
       "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+        "Implementación de una animación 3D con Spline",
+        "Slider para ver las fotos de producto desde la página de inicio",
+        "Simplicación a un diseño minimalista para una experiencia más elegante"
       ],
       "stackUsed": [
         "shopify-logo.webp",
@@ -100,12 +98,11 @@
     },
     "CannaBubu": {
       "title": "CannaBubu",
-      "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
+      "description": "Diseño y desarrollo de una tienda de productos medicinales basados en CBD",
       "featuredImage": "logo-cannabubu.png",
       "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+        "Creación de todas las páginas de la tienda",
+        "Personalización desde Shopify para editar el contenido"
       ],
       "stackUsed": [
         "shopify-logo.webp",
@@ -121,9 +118,9 @@
       "extraVideo": "./product-page-rebranding.gif",
       "description": "Experiencia para el drop 007, M***SHAKES x Fernando Costa",
       "features": [
-        "Modificaciones en el diseño de las páginas de productos.",
-        "Implementación de un modelo 3D para una experiencia renovada.",
-        "Habilidad destacada para fusionar marcas y mejorar la experiencia de compra."
+        "Agregación de un botón para añadir al carrito desde la página de inicio",
+        "Reestrutura de la págona de producto incluyendo un slider y reestructuración de la descripción",
+        "Renovación web con un nueva identidad de marca"
       ],
       "stackUsed": [
         "shopify-logo.webp",
