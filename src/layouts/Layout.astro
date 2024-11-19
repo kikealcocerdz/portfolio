@@ -13,9 +13,18 @@ import "@fontsource-variable/manrope";
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.cdnfonts.com/css/lucida-console"
+      rel="stylesheet"
+    />
+
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.svg" sizes="48x48" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content="{Astro.generator}" />
     <meta name="view-transition" content="same-origin" />
     <title>{title}</title>
@@ -25,6 +34,10 @@ import "@fontsource-variable/manrope";
     <slot />
   </body>
   <style is:global>
+    p {
+      font-family: "Lucida Console", sans-serif;
+    }
+
     @keyframes slideUp {
       from {
         transform: translateY(20%);
@@ -72,6 +85,21 @@ import "@fontsource-variable/manrope";
     code {
       font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+
+    @font-face {
+      font-family: "Pretendo";
+      src: url("./fonts/Pretendo.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Contm";
+      src: url("./fonts/contm.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Contl";
+      src: url("./fonts/contl.ttf") format("truetype");
     }
 
     @font-face {

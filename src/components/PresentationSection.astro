@@ -4,11 +4,34 @@ import SocialMedia from "./SocialMedia.astro";
 ---
 
 <section
-  class="flex flex-row justify-center items-center w-full herosection h-full p-20"
+  class="flex flex-row justify-center items-center w-full herosection h-full sm:p-20 p-6"
 >
-  <img src="wiimiidefault.jpg" />
-  <div class="border-2 border-white rounded-md p-4 m-4">
-    <h3 class="text-center text-3xl font-medium">Quién soy</h3>
+  <div
+    class="flex sm:flex-row flex-col items-center bg-gray-50 border-[#FFD369] border-4 p-8 rounded-lg shadow-lg max-w-max sm:max-w-6xl mx-auto"
+  >
+    <img
+      src="./enriquemii.png"
+      alt="Enrique Alcocer"
+      class="mb-6 sm:w-1/2 w-1/2"
+    />
+    <div class="text-center">
+      <h3 class="text-4xl font-regular text-black mb-4">¡Hello there!</h3>
+      <p
+        class="text-black leading-relaxed sm:text-lg text-sm text-justify sm:px-10"
+      >
+        Soy un desarrollador freelance madrileño con una pasión innata por la
+        tecnología y las experiencias digitales. Combino mis habilidades
+        técnicas como Ingeniero Informático con un enfoque creativo para diseñar
+        soluciones únicas y funcionales, desde tiendas online hasta sitios web
+        interactivos y tradicionales.
+        <br /><br />
+        Fan de la NBA, los videojuegos, el cine, y el arte, además de pasión por
+        comunicar y transmitir ideas, en este caso, desde la Web, lo que me permite
+        colaborar de forma cercana y asegurarnos de que cada detalle de tu proyecto
+        cuente. Si buscas alguien que combine técnica, creatividad y pasión, ¡estoy
+        aquí para ayudarte a hacer realidad tus ideas!
+      </p>
+    </div>
   </div>
 </section>
 <script>
