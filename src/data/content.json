@@ -1,12 +1,51 @@
 [
   {
-    "MyMoonCustoms": {
-      "title": "MyMoonCustoms",
-      "description": "Portfolio para una tienda de personalización de prendas",
-      "featuredImage": "mooncustoms.jpg",
+    "017": {
+      "title": "MilfShakes x Alex Cordobés. Drop 017",
+      "description": "Venta de prendas relacionadas con la tarta exclusiva en colaboración con Alex Cordobés.",
+      "featuredImage": "017.svg",
+      "featuredVideo": "./video-007.gif",
       "features": [
-        "Creación de una única página para presentar los productos",
-        "Animaciones con GSAP para una experiencia más atractiva"
+        "Web experiencia para revelar el drop 007",
+        "Minijuego con pistas utilizando JavaScript y CSS"
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
+      ]
+    },
+    "MILFSHAKES_MUSEUM": {
+      "title": "M***SHAKES MUSEUM",
+      "description": "Venta de 100 figuras artesanales de la marca MilfShakes.",
+      "featuredImage": "museum-ms-b.svg",
+      "featuredVideo": "./video-007.gif",
+      "features": [
+        "Web experiencia para revelar el drop 007",
+        "Minijuego con pistas utilizando JavaScript y CSS"
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
+      ]
+    },
+    "016": {
+      "title": "The Milfos. Psycho Milfo.",
+      "description": "Venta de 100 figuras artesanales de la marca MilfShakes.",
+      "featuredImage": "016.png",
+      "featuredVideo": "./video-007.gif",
+      "features": [
+        "Web experiencia para revelar el drop 007",
+        "Minijuego con pistas utilizando JavaScript y CSS"
+      ],
+      "stackUsed": [
+        "shopify-logo.webp",
+        "JS-logo.webp",
+        "html-logo.webp",
+        "CSS-logo.webp"
       ]
     },
     "007": {
@@ -31,7 +70,7 @@
       "featuredImage": "012.webp",
       "featuredVideo": "./video-012.gif",
       "features": [
-        "Implementación de tickets en un e-commerce",
+        "Implementación de sorteo por tickets en un e-commerce basado en Shopify",
         "Realización en la extracción de los datos para el respectivo sorteo",
         "Creación de una landing atractiva e intuitiva"
       ],
@@ -88,21 +127,6 @@
         "Implementación de una animación 3D con Spline",
         "Slider para ver las fotos de producto desde la página de inicio",
         "Simplicación a un diseño minimalista para una experiencia más elegante"
-      ],
-      "stackUsed": [
-        "shopify-logo.webp",
-        "JS-logo.webp",
-        "html-logo.webp",
-        "CSS-logo.webp"
-      ]
-    },
-    "CannaBubu": {
-      "title": "CannaBubu",
-      "description": "Diseño y desarrollo de una tienda de productos medicinales basados en CBD",
-      "featuredImage": "logo-cannabubu.png",
-      "features": [
-        "Creación de todas las páginas de la tienda",
-        "Personalización desde Shopify para editar el contenido"
       ],
       "stackUsed": [
         "shopify-logo.webp",
